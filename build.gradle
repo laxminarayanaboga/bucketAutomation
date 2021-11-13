@@ -23,6 +23,26 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// Main Core Libs: Mongo, Selenium, Spring Boot, RestAssured, Lombok & TestNG
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.5.6'
+	implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+	implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.10'
+	implementation group: 'org.testng', name: 'testng', version: '7.4.0'
+	
+	// Apache Dependencies
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+	implementation group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '9.0.37'
+	implementation group: 'org.apache.commons', name: 'commons-vfs2', version: '2.0'
+	implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+	implementation group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.12'
+	implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.5'
+	implementation group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+	implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+	implementation group: 'org.yaml', name: 'snakeyaml', version: '1.29'
+	
 }
 
 test {
